@@ -1,0 +1,694 @@
+.models-main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.models-main video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.models-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px 4px 4px #000;
+    font-family: Russo One;
+    font-size: 90.511px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 96.847px */
+}
+
+
+.interior{
+    padding-top: 70px;
+}
+
+.interior .inter-content{
+    display: flex;
+    align-items: center;
+}
+
+.inter-left h1{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.inter-left p{
+    color: #FFF;
+    padding-top: 31px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%; /* 36.52px */
+}
+
+.explore-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 46px;
+}
+
+.explore{
+    margin-top: 148px;
+}
+
+/* .explore-slide{
+    background-image: url('../assests/img/small-trans.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    width: 649.676px;
+} */
+
+.explore-slide{
+    background: #fff;
+    border-radius: 64px 32px 56px 16px / 57px 25px 45px 13px;
+}
+
+
+.explore-info h1{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%; /* 26.56px */
+}
+
+.explore-info h2{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166%; /* 69.72px */
+}
+
+.explore-info .mod-price{
+    padding-top: 48px;
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 40px */
+}
+
+.mod-desc{
+    padding-top: 22px;
+}
+
+
+.explore-img img{
+    width: 300px;
+}
+
+
+.explore .explore-content .explore-title{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+/* .explore-info{
+    padding: 0 50px;
+    width: 100%;
+} */
+
+.perfomance{
+    margin-top: 160px;
+}
+
+.perfomance-content{
+    display: flex;
+}
+
+.pr-right h1{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.pr-right .liter-pr{
+    padding-top: 10px;
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.pr-right p{
+    padding-top: 29px;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%; /* 36.52px */
+}
+
+.model-btns{
+    padding-top: 120px;
+    gap: 14px;
+    display: flex;
+}
+
+.model-btns button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.bottom-pr{
+    display: flex;
+    align-items: center;
+    padding-top: 29px;
+}
+
+.safety{
+    margin-top: 178px;
+}
+
+.safety-content h1{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.safety-content p{
+    padding-top: 7.8px;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166%; /* 36.52px */
+}
+
+.safety-content h4{
+    padding-top: 21px;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%; /* 36.52px */
+}
+
+.sf-swiper{
+    padding-top: 68px;
+}
+
+table{
+    padding: 30px;
+    width: 1032px;
+}
+
+table th{
+    max-width: 100px;
+    text-align: left;
+    color: #8C8C8C;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166%; /* 26.56px */
+}
+
+table td{
+    max-width: 100px;
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166%; /* 36.52px */
+}
+
+.sc-table{
+    background: #1C1C1C;
+}
+
+.pr-table{
+    background: #2F2F2F;
+}
+
+.details{
+    margin-top: 98px;
+}
+
+.inter-img{
+    display: none;
+}
+
+.details-content h1{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.details-content .pr-tables{
+    margin-top: 48px;
+}
+
+.parametrs h1{
+    padding-bottom: 48px;
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.download-section{
+    gap: 0 53px;
+    padding-top: 91px;
+    display: flex;
+    align-items: center;
+}
+
+.download-prices{
+    gap: 0 9px;
+    display: flex;
+    align-items: center;
+}
+
+.download-prices p{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166%; /* 33.2px */
+}
+
+.mobile-robot{
+    display: none;
+}
+
+.mobile-swiper-data{
+    display: none;
+}
+
+.mobile-info{
+    display: none;
+}
+
+.mobile-safety-swiper{
+    display: none;
+}
+
+.exterior{
+    margin-top: 300px;
+}
+
+.ext-content{
+    display: flex;
+    align-items: center;
+    gap: 0 35px;
+}
+
+.ext-left-text-info{
+    padding: 17px;
+}
+
+.ext-left-text-info h2{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Russo One;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 177%; /* 38.94px */
+}
+
+.ext-left-text-info p{
+    padding-top: 17px;
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157%; /* 25.12px */
+}
+
+.ext-left{
+    background: #393939;
+    border-radius: 9px;
+}
+
+.exterior h1{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+
+.ext-right .ext-right-img-gr{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.ext-img{
+    width: 500px;
+}
+
+.line-img{
+    width: 300px;
+}
+
+
+@media only screen and (max-width: 460px){
+    .exterior{
+        display: none;
+    }
+
+    .inter-img{
+        display: block;
+    }
+
+    .inter-right img{
+        display: none;
+    }
+
+    .mobile-robot{
+        display: block;
+    }
+
+    .pr-left img{
+        display: none;
+    }
+
+    .model-btns{
+        display: none;
+    }
+
+    .pr-tables{
+        min-width: 150px;
+        overflow-x: auto;
+    }
+
+
+    .bottom-pr .long-trans{
+        width: 200px;
+        height: 17.063px;
+    }
+
+    .bottom-pr .sm-trans{
+        width: 56.182px;
+    }
+
+    .inter-left h1{
+        color: #FFF;
+        text-align: center;
+        padding-bottom: 27px;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    .inter-left p{
+        color: #FFF;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 13px */
+    }
+
+    .download-section{
+        display: block;
+    }
+
+    .models-main h1{
+        color: #FFF;
+        text-shadow: 0px 1.1718751192092896px 1.1718751192092896px #000;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    .explore .explore-content .explore-title{
+        text-align: center;
+        color: #FFF;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    .mobile-swiper-data{
+        padding-top: 30px;
+        display: block;
+    }
+
+    .mobile-data{
+        background-image: url('../assests/img/mobile-data-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .swiper-module{
+        display: none;
+    }
+
+    .mobile-slider-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-slider-img img{
+        width: 200px;
+    }
+
+    .mobile-slider-info .mobile-silder-price {
+        padding-top: 29px;
+    }
+
+    .mobile-slider-info .starter-pack{
+        text-align: left;
+        padding-top: 9px;
+    }    
+
+    .mobile-slider-info p{
+        color: #000;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 166%; /* 16.6px */
+    }
+
+    .mobile-slider-info h2{
+        color: #000;
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166%; /* 41.5px */
+    }
+
+    .mobile-slider-info p{
+        color: #000;
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 14px */
+    }
+
+    .mobile-slider-info{
+        padding-top: 14px;
+    }
+
+    .safety-group-btn{
+        display: none;
+    }
+
+    .mobile-slider-img{
+        position: relative;
+        top: -20px;
+    }
+
+    .pr-right h1{
+        color: #FFF;
+        text-align: center;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    .pr-right .liter-pr{
+        display: none;
+    }
+
+    .pr-right .mobile-robot{
+        padding-top: 24px;
+    }
+
+    .pr-right .perfomance-desc{
+        display: none;
+    }
+
+    .pr-right p{
+        color: #FFF;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 13px */
+    }
+
+    .mobile-info{
+        display: block;
+    }
+
+    .safety-content h1{
+        text-align: center;
+        color: #FFF;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    .sf-swiper{
+        display: none;
+    }
+
+    .mobile-safety-swiper{
+        padding-top: 24px;
+        display: block;
+    }
+
+    .safety-content p{
+        color: #FFF;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 13px */
+    }
+
+    .safety-content h4{
+        color: #FFF;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 13px */
+    }
+
+    .parametrs{
+        margin-top: 63px;
+    }
+
+    .paramters-content h1{
+        text-align: center;
+        color: #FFF;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    table th{
+        max-width: 50px;
+        color: #8C8C8C;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 166%; /* 12.358px */
+    }
+
+    table td{
+        width: 90px;
+        color: #FFF;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 166%; /* 18.537px */
+    }
+
+    
+    .download-prices p{
+        color: #FFF;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 166%; /* 21.58px */
+    }
+
+    .download-section{
+        padding-top: 33px;
+    }
+
+    .download-prices{
+        padding-top: 30px;
+    }
+}

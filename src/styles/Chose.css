@@ -1,0 +1,217 @@
+.chose{
+    margin-top: 140px;
+    background-image: url('../assests/img/wht.png');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.chose-content{
+    padding-top: 90px;    
+}
+
+.top-text {
+    position: relative;
+    text-align: center;
+}
+
+.top-text h1{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+    font-family: Russo One;
+    font-size: 169px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.top-text p{
+    position: absolute;
+    color: #000;
+    top: 130px;
+    left: 30%;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.bestune-drive{
+    padding-top: 66px;
+    gap: 50px;
+    display: flex;
+}
+
+.bestune-test-drive-section{
+    z-index: 10;
+}
+
+.bestune-test-drive-section h1{
+    color: #1C1C1C;
+    font-family: Russo One;
+    font-size: 69px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 73.83px */
+}
+
+
+.test-drive-link{
+    padding-top: 36px;
+}
+
+.test-drive-link h2{
+    display: none;
+}
+
+.bestune-test-drive-section .test-drive-link a{
+    gap: 0 5px;
+    display: flex;
+    width: 130px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    border-radius: 5px;
+    background: linear-gradient(163deg, #000 1.99%, #737373 179.48%);
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 107%; /* 17.12px */
+}
+
+.slider-car .img-slider-content img {
+    position: relative;
+    z-index: 10;
+}
+
+.slider-car .bestune-model-info{
+    position: relative;
+}
+
+.white-car-sec{
+    display: none;
+}
+
+.slider-car .bestune-model-info h2 {
+    left: -100px;
+    top: -15px;
+    color: #F0F0F0;
+    font-family: Russo One;
+    font-size: 189px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; 
+    position: absolute;
+    z-index: 5;
+}
+
+
+.slider-btns{
+    padding-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.slider-btns button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 460px){
+    .chose{
+        padding-bottom: 12px;
+    }
+
+    .bestune-drive{
+        padding-top: 20px;
+    }
+    .chose-content{
+        padding-top: 30px;
+    }
+
+    .top-text{
+        top: -90px;
+    }
+
+    .top-text h1{
+        font-family: Russo One;
+        font-size: 59.637px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 63.811px */
+    }
+
+    .top-text p{
+        position: absolute;
+        color: #fff;
+        top: 30px;
+        left: 30px;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .slider-car .img-slider-content img{
+        width: 352.045px;
+    }
+
+    .slider-car .bestune-model-info h2{
+        font-size: 66.695px;
+    }
+
+    .bestune-test-drive-section h1{
+        color: #1C1C1C;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    .bestune-drive{
+        flex-direction: column;
+    }
+    .img-sliders-content{
+        display: none;
+    }
+
+    .white-car-sec{
+        display: block;
+        width: 352.045px;
+    }
+    
+    .bestune-model-info h2{
+        display: none;
+    }
+
+    .test-drive-link{
+        display: flex;
+        align-items: start;
+        gap: 0 25px;
+    }
+
+    .test-drive-link h2{
+        color: #F0F0F0;
+        font-family: Russo One;
+        font-size: 66.695px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 71.363px */
+        display: block;
+    }
+
+    .slider-btns{
+        padding-top: 2px;
+    }
+}

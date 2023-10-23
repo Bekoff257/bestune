@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Chakra+Petch:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
+.small-models{
+
+}
+
+.sm-content h1{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.cars{
+    padding-top: 36px;
+    grid-gap: 31px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.imgsm-wrap p{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    line-height: 166%; /* 39.84px */
+}
+
+.imgsm-wrap img{
+    width: 173.332px;
+}
+
+@media only screen and (max-width: 460px){
+    .cars{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sm-content h1{
+        color: #FFF;
+        font-family: Russo One;
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    .imgsm-wrap img{
+        width: 155.668px;
+    }
+}

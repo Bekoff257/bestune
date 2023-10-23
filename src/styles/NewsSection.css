@@ -1,0 +1,116 @@
+.news-section{
+    margin-top: 150px;
+}
+
+.news-top-content h1{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.swiper-content{
+    padding-top: 35px;
+}
+
+.news-slide{
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+}
+
+.news-slide a{
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+    text-decoration: none;
+}
+
+.img-slider-2{
+    display: none;
+}
+
+.info-text-content h3{
+    padding-top: 36px;
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 28px */
+}
+
+.info-text-content p{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%; /* 26.56px */
+}
+
+.img-slider-1{
+    transform: skew(-12deg);
+    -webkit-transform: skew(-12deg);
+    -moz-transform: skew(-12deg);
+    border-radius: 10px;
+    min-width: 700px;
+    width: 100%;
+    height: 400px;
+}
+
+@media only screen and (max-width: 460px){
+    .news-slide{
+        flex-direction: column;
+    }
+
+    .news-slide a{
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+    .info-text-content p{
+        padding-top: 25px;
+        color: #FFF;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 166%;
+    }
+
+    .info-text-content h3{
+        min-width: 370px;
+        padding-top: 17px;
+        color: #FFF;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 20px */
+    }
+
+    /* .img-slider-1{
+        display: none;
+    } */
+
+    /* .img-slider-2{
+        width: 100%;
+        display: block;
+    } */
+
+    .img-slider-1{
+        transform: skew(-0deg);
+        border-radius: 15px;
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        min-width: 300px;
+    }
+}

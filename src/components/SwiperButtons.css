@@ -1,0 +1,18 @@
+.swiper-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 0 10px;
+}
+
+.swiper-btns button{
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.swiper-btns button svg{
+    color: #fff;
+}

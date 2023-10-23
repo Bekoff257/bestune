@@ -1,0 +1,62 @@
+.about{
+    padding-top: 158px;
+}
+
+
+.about-content h1{
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+
+.video-content{
+    padding-top: 44px;
+    position: relative;
+}
+
+.video-content .video{
+    width: 100%;
+}
+
+.video-content .playbtn{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.info-content p{
+    padding-top: 35px;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%; /* 36.52px */
+}
+
+@media only screen and (max-width: 460px){
+    
+    .about-content h1{
+        color: #FFF;
+        font-family: Russo One;
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+
+    .info-content p{
+        padding-top: 5px;
+        color: #FFF;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 13px */
+    }
+}

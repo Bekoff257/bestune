@@ -1,0 +1,49 @@
+.filials{
+    margin-top: 115px;
+}
+
+.filials-content h1{
+    color: #FFF;
+    font-family: Russo One;
+    padding-bottom: 46px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 42.8px */
+}
+.filials-content {
+    position: relative;
+  }
+  
+  .select-wrapper {
+    position: absolute;
+    top: 110px;
+    left: 20px; 
+    z-index: 2; 
+  }
+  
+
+  .select-wrapper select{
+    padding: 7px 11px;
+    border-radius: 4.81px;
+    border: 0.802px solid #fff;
+    background: #4f4f4f;
+    color: #fff;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%; /* 17.12px */
+  }
+
+  @media only screen and (max-width: 460px){
+    .filials-content h1{
+        text-align: center;
+        color: #FFF;
+        font-family: Russo One;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107%; /* 26.75px */
+    }
+  }
