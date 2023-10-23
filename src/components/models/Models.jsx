@@ -3,8 +3,6 @@ import "../../styles/Models.css"
 import video from "../../assests/videos/car-video.mp4";
 import Nav from '../nav/Nav';
 import interior from "../../assests/img/interior.png"
-import whiteCar from "../../assests/img/white-car.png"
-import blackCar from "../../assests/img/car.png"
 import robot from "../../assests/img/robot.png"
 import SwiperButtons from '../SwiperButtons';
 import lognTrans from "../../assests/img/long-tr.png"
@@ -37,24 +35,24 @@ const Models = () => {
         .catch(err => console.log(err))
     }, [])
 
-    const modelsArray = [
-        {   
-            img: whiteCar,
-            year: 'The bestune - 2023',
-            name: "BESTUNE B70S",
-            desc: 'Efficiency that opens up grand possibilities.',
-            price: '$37,000',
-            starterPack: 'Boshlang’ich narxi',
-        },
-        {   
-            img: blackCar,
-            year: 'The bestune - 2023',
-            name: "BESTUNE B70S",
-            desc: 'Efficiency that opens up grand possibilities.',
-            price: '$37,000',
-            starterPack: 'Boshlang’ich narxi',
-        }
-    ]
+    // const modelsArray = [
+    //     {   
+    //         img: whiteCar,
+    //         year: 'The bestune - 2023',
+    //         name: "BESTUNE B70S",
+    //         desc: 'Efficiency that opens up grand possibilities.',
+    //         price: '$37,000',
+    //         starterPack: 'Boshlang’ich narxi',
+    //     },
+    //     {   
+    //         img: blackCar,
+    //         year: 'The bestune - 2023',
+    //         name: "BESTUNE B70S",
+    //         desc: 'Efficiency that opens up grand possibilities.',
+    //         price: '$37,000',
+    //         starterPack: 'Boshlang’ich narxi',
+    //     }
+    // ]
   return (
     <div className='models'>
         <div className="models-main">
