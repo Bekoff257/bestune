@@ -1,0 +1,34 @@
+.Safety {
+    margin-top: 50px;
+}
+
+.swiper__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.swiper__img {
+    width: 557px;
+    height: 357px;
+}
+
+.swiper__img1 {
+    width: 557px;
+    height: 357px;
+}
+
+.swiper__item {
+
+}
+
+.swiper__item:nth-child(1) {
+    outline: lightgray 50% / cover no-repeat;
+    opacity: 0.1;;
+}
+
+.swiper__item:nth-child(4) {
+    outline: lightgray 50% / cover no-repeat;
+    opacity: 0.1;;
+}

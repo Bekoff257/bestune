@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Chakra+Petch:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
 
-.small-models{
 
-}
 
 .sm-content h1{
     color: #FFF;
@@ -28,7 +26,34 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    line-height: 166%; /* 39.84px */
+    line-height: 166%;
+}
+
+.imgsm-wrap{
+    padding: 28px;
+    transition: .2s ease;
+}
+  
+.imgsm-wrap a{
+    text-decoration: none;
+}
+
+.imgsm-wrap:hover{
+    border-radius: 14px;
+    background: #2F2F2F;
+    cursor: pointer;
+}
+
+.image {
+    display: none;
+}
+
+.imgsm-wrap:hover .image-hover{
+    display: none;
+}
+
+.imgsm-wrap:hover .image{
+    display: block;
 }
 
 .imgsm-wrap img{
@@ -36,6 +61,14 @@
 }
 
 @media only screen and (max-width: 460px){
+    .imgsm-wrap img{
+        width: 116.919px;
+    }
+
+    .imgsm-wrap{
+        padding: 10px;
+    }
+
     .cars{
         grid-template-columns: repeat(2, 1fr);
     }

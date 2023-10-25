@@ -5,6 +5,10 @@
     overflow: hidden;
 }
 
+.models-main .nav{
+    opacity: 0.6;
+}
+
 .models-main video {
     position: absolute;
     top: 0;
@@ -38,8 +42,17 @@
 
 .interior .inter-content{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
+
+/* Add this CSS to your styles file, e.g., styles.css or within your component's CSS-in-JS */
+
+.tab-content {
+    max-height: 300px; /* Adjust this value as needed to control the maximum height */
+    overflow-y: auto;
+    /* Add more styling as necessary, such as padding, margin, or a background color */
+  }
+  
 
 .inter-left h1{
     color: #FFF;
@@ -53,7 +66,7 @@
 .inter-left p{
     color: #FFF;
     padding-top: 31px;
-    font-size: 22px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 166%; /* 36.52px */
@@ -147,6 +160,12 @@
 
 .perfomance-content{
     display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.pr-right{
+    width: 100%;
 }
 
 .pr-right h1{
@@ -183,6 +202,7 @@
     display: flex;
 }
 
+
 .model-btns button{
     cursor: pointer;
     outline: none;
@@ -198,6 +218,12 @@
 
 .safety{
     margin-top: 178px;
+}
+
+.sf-centered-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .safety-content h1{
@@ -227,9 +253,17 @@
     line-height: 166%; /* 36.52px */
 }
 
+/* .swiper-slide {
+    opacity: .25;
+  } */
+
 .sf-swiper{
     padding-top: 68px;
 }
+
+/* .swiper-slide-visible {
+    opacity: 1;
+  } */
 
 table{
     padding: 30px;
@@ -237,7 +271,7 @@ table{
 }
 
 table th{
-    max-width: 100px;
+    min-width: 290px;
     text-align: left;
     color: #8C8C8C;
     leading-trim: both;
@@ -260,10 +294,12 @@ table td{
 }
 
 .sc-table{
+    width: 100%;
     background: #1C1C1C;
 }
 
 .pr-table{
+    width: 100%;
     background: #2F2F2F;
 }
 
@@ -652,7 +688,7 @@ table td{
     }
 
     table th{
-        max-width: 50px;
+        min-width: 250px;
         color: #8C8C8C;
         leading-trim: both;
         text-edge: cap;
@@ -690,5 +726,15 @@ table td{
 
     .download-prices{
         padding-top: 30px;
+    }
+
+    .pr-table{
+        width: 150%;
+        overflow-x: scroll;
+    }
+
+    .sc-table{
+        width: 150%;
+        overflow-x: scroll;
     }
 }

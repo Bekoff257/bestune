@@ -2,6 +2,7 @@
 
 .nav{
     padding: 40px;
+    background: #262626;
 }
 
 .menu-toggler{
@@ -129,5 +130,7 @@
         left: 0;
         width: 100%;
         z-index: 90;
+        background: #262626;
+        opacity: 1;
     }
 }

@@ -1,35 +1,11 @@
 import React from 'react'
-import car from "../../assests/img/cars.png"
 import { useState, useEffect } from 'react'
+import blueCar from "../../assests/img/image 13 (2).png"
 import "../../styles/SmallModels.css"
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
-const imgArr = [
-    {
-        img: car,
-    },
-    {
-        img: car,
-    },
-    {
-        img: car,
-    },
-    {
-        img: car,
-    },
-    {
-        img: car,
-    },
-    {
-        img: car,
-    },
-    {
-        img: car,
-    },
-    {
-        img: car,
-    }
-]
+
 const SmallModels = () => {
   const [ smlData, setSmlData ] = useState([])
 
@@ -56,8 +32,11 @@ const SmallModels = () => {
                             const uzName = item.name.find((nmbObj) => nmbObj.lang === "uz")
                             return (
                                 <div className="imgsm-wrap">
-                                    <img src={item?.photos.map((elem) => elem?.photos)[0]} alt="" />
-                                    <p>{enName ? enName.name : uzName.name}</p>
+                                    <Link to={'/bestune-models'}>
+                                        <img className='image-hover' src={item?.photos.map((elem) => elem?.photos)[0]} alt="" />
+                                        <img className='image' src={blueCar} alt="blueCar" />
+                                        <p>{enName ? enName.name : uzName.name}</p>
+                                    </Link>
                                 </div>
                             )
                         })

@@ -73,6 +73,10 @@
         text-decoration: none;
     }
 
+    .info-text-content{
+        padding-left: 25px;
+    }
+
     .info-text-content p{
         padding-top: 25px;
         color: #FFF;

@@ -24,28 +24,72 @@
     font-style: normal;
     font-weight: 400;
     line-height: 107%;
-    background: linear-gradient(to right, #FFFFFF, #FFFFFF);
+    background: linear-gradient(154deg, white 0%, rgba(255, 255, 255, 0) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
   }
 
-  .bestune-car{
+  .swiper-btnss{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .swiper-btnss button{
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+  }
+
+  .swiper-btnss .countof_swiper{
+    clip-path: polygon(50% 100%, 100% 74.96%, 100% 24.29%, 52.71% 0%, 29.29% 0%, 50% 0%, 0% 24.29%, 0% 74.96%, 50% 100%);
+    background-color: #ffff;
+    padding: 15px 20px;
+  }
+
+  .black-car{
     background-image: url('../assests/img/way.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .yellow-car{
+    background-image: url('../assests/img/way1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bestune-car {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     position: relative;
     height: 100%;
+    top: -180px;
+}
+
+  .black-car{
+    width: 100%;
   }
 
-  .bestune-car{
-    top: -180px;
+  .bestune-bck-car{
+    position: relative;
+    left: 260px;
   }
+
+  .bestune-ylw-car{
+    position: relative;
+    left: 260px;
+  }
+
 
   @media only screen and (max-width: 460px){
     .main{

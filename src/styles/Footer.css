@@ -75,6 +75,8 @@
 }
 
 .footer-social-list .footer-social-item a{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
 }
 

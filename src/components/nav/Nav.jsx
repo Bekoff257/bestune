@@ -1,4 +1,3 @@
-import logo from "../../assests/img/bestunelogo.png"
 import '../../styles/Nav.css'
 import { Link } from "react-scroll"
 import { NavLink } from "react-router-dom"

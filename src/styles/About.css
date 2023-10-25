@@ -28,6 +28,11 @@
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
+    transition: .2s;
+}
+
+.playbtn:hover{
+    opacity: .6;
 }
 
 .info-content p{

@@ -1,10 +1,12 @@
 import React from 'react'
 import "../../styles/Chose.css"
-import { Link } from 'react-router-dom'
 import whiteCar from "../../assests/img/white-car.png"
-import { Element } from 'react-scroll'
+import { useState } from 'react'
+import Modal from '../modal/Modal'
 
 const Chose = () => {
+    const [ modalOpen, setModalOpen ] = useState(false)
+
   return (
         <div className='chose'>
         <div className="container">
@@ -21,7 +23,8 @@ const Chose = () => {
                         </h1>
                         <img className='white-car-sec' src={whiteCar} alt="" />
                         <div className="test-drive-link">
-                        <Link to={'/test-drive'}>
+                        { modalOpen && <Modal setModalOpen={setModalOpen}/> }
+                        <button onClick={() => setModalOpen(true)} className='open-drv-btn'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                             <g clip-path="url(#clip0_38_1539)">
                                 <path d="M8.5 0.513916C4.08968 0.513916 0.513916 4.08968 0.513916 8.5C0.513916 12.9103 4.08968 16.4861 8.5 16.4861C12.9103 16.4861 16.4861 12.9103 16.4861 8.5C16.4861 4.08968 12.9103 0.513916 8.5 0.513916ZM8.5 2.51044C11.099 2.51044 13.2941 4.18452 14.1232 6.50348H2.8460C3.70585 4.18452 5.90103 2.51044 8.5 2.51044ZM8.5 9.49826C7.94846 9.49826 7.50174 9.05154 7.50174 8.5C7.50174 7.94846 7.94846 7.50174 8.5 7.50174C9.05154 7.50174 9.49826 7.94846 9.49826 8.5C9.49826 9.05154 9.05154 9.49826 8.5 9.49826ZM2.51044 8.5C5.23818 8.5 7.44733 11.1284 7.49375 14.3882C4.67067 13.9046 2.51044 11.4578 2.51044 8.5ZM9.50625 14.3882C9.55267 11.1284 11.7618 8.5 14.4896 8.5C14.4896 11.4578 12.3293 13.9046 9.50625 14.3882Z" fill="white"/>
@@ -33,7 +36,7 @@ const Chose = () => {
                             </defs>
                             </svg>
                             Test drive
-                        </Link>
+                        </button>
                         <h2>
                         B70S
                         </h2>

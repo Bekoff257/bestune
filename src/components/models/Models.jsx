@@ -2,19 +2,15 @@ import React from 'react';
 import "../../styles/Models.css"
 import video from "../../assests/videos/car-video.mp4";
 import Nav from '../nav/Nav';
-import interior from "../../assests/img/interior.png"
-import robot from "../../assests/img/robot.png"
 import SwiperButtons from '../SwiperButtons';
-import lognTrans from "../../assests/img/long-tr.png"
-import transted from "../../assests/img/transted.png"
 import safe1 from "../../assests/img/safe-1.png"
 import safe2 from "../../assests/img/safe-2.png"
-import mobileInter from "../../assests/img/mobile-inter.png"
-import mobileRobot from "../../assests/img/mobile-robot.png"
 import mobileSafetyImg from "../../assests/img/mobile-safety.png"
 import { useState, useEffect } from 'react';
 import extCar from "../../assests/img/ext-car.png"
 import line from "../../assests/img/line.png"
+import Perfomance from '../perfomance/Perfomance';
+import Safety from '../safety/Safety';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, FreeMode } from 'swiper/modules';
@@ -22,6 +18,7 @@ import { Pagination, FreeMode } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import axios from 'axios';
+import Interior from '../interior/Interior';
 
 const Models = () => {
     const [ modelsData, setModelsData ] = useState([])
@@ -35,24 +32,6 @@ const Models = () => {
         .catch(err => console.log(err))
     }, [])
 
-    // const modelsArray = [
-    //     {   
-    //         img: whiteCar,
-    //         year: 'The bestune - 2023',
-    //         name: "BESTUNE B70S",
-    //         desc: 'Efficiency that opens up grand possibilities.',
-    //         price: '$37,000',
-    //         starterPack: 'Boshlang’ich narxi',
-    //     },
-    //     {   
-    //         img: blackCar,
-    //         year: 'The bestune - 2023',
-    //         name: "BESTUNE B70S",
-    //         desc: 'Efficiency that opens up grand possibilities.',
-    //         price: '$37,000',
-    //         starterPack: 'Boshlang’ich narxi',
-    //     }
-    // ]
   return (
     <div className='models'>
         <div className="models-main">
@@ -66,26 +45,7 @@ const Models = () => {
         </div>
         <div className="container">
             <div className="models-content">
-                <div className="interior">
-                    <div className="inter-content">
-                    <div className="inter-left">
-                        <h1>INTERIOR</h1>
-                        <img className='inter-img' src={mobileInter} alt="inter-mobile" />
-                        <p>
-                            The interior of Urus Performante is made for its driver, enhanced <br />
-                            by the use of innovative and lightweight materials such as <br />
-                            Alcantara and carbon fiber. With these, dark tones, contrast <br />
-                            stitching and exclusive Performante logos add unique details <br />
-                            to express the car’s sporting character. Refined, contemporary and <br />
-                            ergonomically efficient, the interior of Urus Performante is <br />
-                            designed to make the driver “feel like a pilot.”
-                        </p>
-                    </div>
-                    <div className="inter-right">
-                        <img src={interior} alt="Interior" />
-                    </div>
-                    </div>
-                </div>
+                <Interior/>
                 <div className="explore">
                     <div className="explore-content">
                         <h1 className='explore-title'>EXPLORE ALL COLORS</h1>
@@ -163,110 +123,8 @@ const Models = () => {
                         </div>
                     </div>
                 </div>
-                <div className="perfomance">
-                    <div className="perfomance-content">
-                        <div className="pr-right">
-                            <h1>
-                                PERFORMANCE
-                            </h1>
-                            <p className='liter-pr'>
-                                4-CYLINDER 1.5-LITER TURBOCHARGED ENGINE <br />
-                                WITH 168 HP.
-                            </p>
-                            <img className='mobile-robot' src={mobileRobot} alt="mobileRobot" />
-                            <p className='perfomance-desc'>
-                                It is a sport utility vehicle with a front wheel drive type. <br />
-                                The transmission is 7-speed automatic, and the type <br />
-                                of fuel that should be used to operate this car is <br />
-                                gasoline, with a fuel economy of 15.5 km / liter.
-                            </p>
-                            <p className='mobile-info'>
-                                The interior of Urus Performante is made for its driver, enhanced by the use of innovative and lightweight materials such as Alcantara and carbon fiber. With these, dark tones, contrast stitching and exclusive Performante logos add unique details to express the car’s sporting character. Refined, contemporary and ergonomically efficient, the interior of Urus Performante is designed to make the driver “feel like a pilot.”
-                            </p>
-                        <div className="model-btns">
-
-                            <button className='btn-left'>
-
-                            <svg width="54" height="52" viewBox="0 0 54 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28.893 1.94349C27.5426 1.20069 25.9059 1.20069 24.5555 1.94349L6.4116 11.9234C4.97371 12.7143 4.08037 14.2252 4.08037 15.8663V35.4141C4.08037 37.0551 4.97371 38.5661 6.41161 39.357L24.5555 49.3369C25.9059 50.0797 27.5426 50.0797 28.893 49.3369L47.0369 39.357C48.4748 38.5661 49.3681 37.0551 49.3681 35.4141V15.8663C49.3681 14.2252 48.4748 12.7143 47.0369 11.9234L28.893 1.94349Z" stroke="white"/>
-                                <path d="M29.1514 18.2761L22.5252 24.4974C21.8658 25.1166 21.8658 26.1639 22.5252 26.783L29.1514 33.0043" stroke="white" stroke-linecap="round"/>
-                            </svg>
-
-                            </button>
-
-                            <button className='btn-right'>
-
-                            <svg width="54" height="52" viewBox="0 0 54 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.5555 1.94349C25.9059 1.20069 27.5426 1.20069 28.893 1.94349L47.0369 11.9234C48.4748 12.7143 49.3681 14.2252 49.3681 15.8663V35.4141C49.3681 37.0551 48.4748 38.5661 47.0369 39.357L28.893 49.3369C27.5426 50.0797 25.9059 50.0797 24.5555 49.3369L6.4116 39.357C4.97371 38.5661 4.08037 37.0551 4.08037 35.4141V15.8663C4.08037 14.2252 4.97371 12.7143 6.41161 11.9234L24.5555 1.94349Z" stroke="white"/>
-                                <path d="M24.2971 18.2761L30.9232 24.4974C31.5827 25.1166 31.5827 26.1639 30.9232 26.783L24.2971 33.0043" stroke="white" stroke-linecap="round"/>
-                            </svg>
-
-                            </button>
-                        </div>
-                        </div>
-                        <div className="pr-left">
-                            <img src={robot} alt="enginee_robot" />
-                        </div>
-                    </div>
-                    <div className="bottom-pr">
-                        <img className='sm-trans' src={transted} alt="trans-img" />
-                        <img className='sm-trans' src={transted} alt="trans-img" />
-                        <img className='sm-trans' src={transted} alt="trans-img" />
-                        <img className='long-trans' src={lognTrans} alt="trans-img" />
-                    </div>
-                </div>
-                <div className="safety">
-                    <div className="safety-content">
-                        <h1>
-                            SAFETY
-                        </h1>
-                        <div className="mobile-safety-swiper">
-                            <Swiper
-                                spaceBetween={10}
-                                centeredSlides={true}
-                                pagination={true}
-                                modules={[Pagination]}
-                                className="mySwiper"
-                            >
-                            <SwiperSlide>
-                                <img src={mobileSafetyImg} alt="mobile-safety" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img src={mobileSafetyImg} alt="mobile-safety" />
-                            </SwiperSlide>
-                            </Swiper>
-                        </div>
-                        <p>
-                            The T77 Pro features a robust high-strength steel construction with the highest levels of 
-                            strength and flexibility and comes with several safety systems for safe long trips.
-                        </p>
-                        <h4>
-                            Comfortable seats, high-quality safety design, 5 stars in the Chinese Safety Scale Program.
-                        </h4>
-                        <div className="sf-swiper">
-                            <Swiper
-                                spaceBetween={10}
-                                centeredSlides={true}
-                                freeMode={true}
-                                autoplay={{
-                                    delay: 2500,
-                                    disableOnInteraction: false,
-                                }}
-                                
-                                modules={[Pagination, FreeMode]}
-                                className="mySwiper"
-                            >
-                            <SwiperSlide>
-                                <img src={safe1} alt="safety" />
-                                <img src={safe2} alt="safety" />
-                            </SwiperSlide>
-                            <div className="safety-group-btn">
-                                <SwiperButtons/>
-                            </div>
-                            </Swiper>
-                        </div>
-                    </div>
-                </div>
+                <Perfomance/>
+                <Safety/>
                 <div className="parametrs">
                     <div className="paramters-content">
                         <h1>
@@ -313,6 +171,8 @@ const Models = () => {
                             <tr>
                                 <th>Задние тормозные механизмы</th>
                                 <th>Объем багажного отделения (л)</th>
+                                <th>Передние тормозные механизмы</th>
+
                             </tr>
                             <tr>
                                 <td>дисковые</td>

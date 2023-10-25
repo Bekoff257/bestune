@@ -6,7 +6,6 @@ import Nav from './components/nav/Nav';
 import Footer from './components/footer/Footer';
 import News from './routes/News';
 import { useEffect, useState } from 'react';
-import Modal from './components/modal/Modal';
 import SingleNew from './components/single-new/SingleNew';
 
 function App() {
